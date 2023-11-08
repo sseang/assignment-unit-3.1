@@ -114,7 +114,7 @@ console.log('The animals are now', animalArray);
 
 let firstColor = colors.shift();
 console.log('Removed first color', firstColor);
-console.log('The colors are now',colors);
+console.log('The colors are now', colors);
 
 
 
