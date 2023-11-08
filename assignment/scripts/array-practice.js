@@ -12,6 +12,7 @@ console.log('Animals are: ', animalArray);
 //    a message, similar to the example above.
 let favoriteFoods = ['steaks', 'sushi', 'burgers', 'seafood', 'ramen']
 console.log('Foods are: ', favoriteFoods);
+
 // Array.length: A property that tells you how many items are in a given array.
 console.log('--- 2. Length of an array ---');
 
@@ -24,6 +25,7 @@ console.log('Number of animals:', numberOfAnimals);
 //    Don't forget to console.log `numberOfFoods` to make sure your code worked!
 let numberOfFoods = favoriteFoods.length
 console.log('Number of food:', numberOfFoods);
+
 // Accessing array items
 console.log('--- 3. Accessing items in an array ---');
 
@@ -37,15 +39,19 @@ console.log('First animal is', firstAnimal);
 //      worked as expected.
 let secondAnimal = animalArray[1];
 console.log('Second animal is', secondAnimal);
+
 // 3.b. TODO: Create a variable `lastAnimal` and assign it the value of
 //      the "last" item in `animalArray`, using its array index.
 //      You'll need to console.log `animalArray` and `lastAnimal` to make
 //      sure that your code does what you want. (Never trust your code until
 //      you have proof that it works!)
 let lastAnimal = animalArray[3];
-console.log('Last animal is', lastAnimal)
+console.log('Last animal is', lastAnimal);
+
 // 3.c. (STRETCH) TODO: Refactor 3.b to use the `animalArray` variable's .length 
 //       property, rather than the exact (hardcoded) index number of the last item.
+//Come back to complete stretch
+
 
 
 
@@ -61,7 +67,9 @@ console.log('Added an animal to end,', animalArray);
 //      a dessert that you love.
 //      Similar to above, add the `dessert` to the end of your `favoriteFoods`
 //      array. (How can you be 100% certain this worked? 🤔)
-
+let dessert = 'cheesecake';
+favoriteFoods.push(dessert);
+console.log(favoriteFoods);
 
 // Example: Add to the beginning of an array using the Array.unshift method.
 let animalToUnshift = 'walrus';
@@ -71,6 +79,9 @@ console.log(`Added an animal to beginning: ${animalArray}`);
 // 4.b. TODO: Create a variable `entree` and assign it a string value of
 //      an entree that you enjoy.
 //      Add the `entree` to the beginning of your `favoriteFoods` array.
+let entree = 'meatloaf';
+favoriteFoods.unshift(entree);
+console.log(favoriteFoods);
 
 
 // Example: Remove the last animal by using the Array.pop method.
